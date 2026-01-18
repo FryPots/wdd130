@@ -9,6 +9,11 @@ nav a {
     padding: 20px;
 }
 
+main {
+    display: block;
+    max-width: 840px;
+}
+
 h1 {
     color: darkblue
 }
@@ -23,4 +28,16 @@ img {
 
 p {
     padding: 10px;
+}
+
+aside {
+    padding: 0.5em;
+    width: 240px;
+    height: auto;
+    margin: 2em;
+    border: 1px solid slategrey;
+    background-color: whitesmoke;
+    color: slategrey;
+    text-align: left;
+
 }
