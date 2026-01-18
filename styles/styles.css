@@ -34,10 +34,14 @@ aside {
     padding: 0.5em;
     width: 240px;
     height: auto;
-    margin: 2em;
+    margin: 1em;
     border: 1px solid slategrey;
     background-color: whitesmoke;
     color: slategrey;
     text-align: left;
 
+}
+
+aside img {
+    float: right;
 }
