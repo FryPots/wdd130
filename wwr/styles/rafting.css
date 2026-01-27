@@ -53,6 +53,8 @@ article {
 }
 
 .hero article {
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
     position: absolute;
     padding: 1em;
     bottom: 0%;
