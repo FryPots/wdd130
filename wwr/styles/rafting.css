@@ -79,7 +79,10 @@ h1 {
 
 .hero article img {
     float: right;
-    width: 125px;
+    height: 10rem;
+    width: auto;
+    float: left;
+    border-right: solid 2rem var(--accent1-color);
 }
 
 .socialmedia img {
