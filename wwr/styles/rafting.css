@@ -1,90 +1,109 @@
 :root {
-    --primary-color: #055a05;
+    --primary-color: #303030;
     --secondary-color: #f4a261;
-    --accent1-color: #264653;
+    --accent1-color: #515151;
     --accent2-color: #e9c46a;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    margin: 0%;
 }
 
-header,
-main,
-footer {
-    width: 840px;
-    margin: 0 auto;
+header {
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+
+    min-width: 700px;
+    width: 100%;
+
+    margin: 0;
+    margin-bottom: 2rem;
+    padding: 0%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    background-color: var(--primary-color);
 }
 
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
+nav {
+    width: 100%;
+    height: 100%;
+
+    align-content: center;
 }
 
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
+nav ul {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    padding: 0%;
+
+    list-style-type: none;
 }
 
-.socialmedia a {
+nav a {
+    color: var(--accent2-color);
     text-decoration: none;
 }
 
-.hero {
-    position: relative;
-}
-
-.hero article {
-    background-color: var(--accent1-color);
-    color: var(--accent2-color);
-    position: absolute;
-    padding: 1em;
-    bottom: 0%;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
+nav a:hover {
     color: var(--secondary-color);
 }
 
-.hero article img {
-    float: right;
-    height: 10rem;
-    width: auto;
-    float: left;
-    border-right: solid 2rem var(--accent1-color);
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    position: relative;
+
+    padding: 0%;
+
+    width: 700px;
+    height: 365px;
+    box-shadow: 2px 19px 29px 9px var(--primary-color);
+}
+
+.hero-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.hero h1 {
+    position: relative;
+    align-self: center;
+    top: 0;
+
+    color: var(--accent2-color);
+}
+
+.hero article {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+
+    margin: 1rem;
+    padding: 1rem;
+
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+
 }
 
 .socialmedia img {
-    width: 4rem;
+    width: 2rem;
 }
+
+    {}
