@@ -19,6 +19,7 @@ header {
 
     display: grid;
     grid-template-columns: 1fr 2fr;
+    grid-template-rows: 62px;
     align-items: center;
     justify-items: center;
 
@@ -34,9 +35,13 @@ header {
     background-color: var(--primary-color);
 }
 
+header img {
+    height: 62px;
+    width: auto;
+}
+
 nav {
     width: 100%;
-    height: 100%;
 
     align-content: center;
 }
@@ -68,10 +73,11 @@ nav a:hover {
     position: relative;
 
     padding: 0%;
+    margin-bottom: 2rem;
 
     width: 700px;
     height: 365px;
-    box-shadow: 2px 19px 29px 9px var(--primary-color);
+    box-shadow: 2px 10px 20px 9px var(--primary-color);
 }
 
 .hero-img {
@@ -106,4 +112,80 @@ nav a:hover {
     width: 2rem;
 }
 
-    {}
+.history {
+    min-width: 700px;
+    max-width: 1100px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 3rem auto;
+    grid-template-columns: auto auto auto;
+}
+
+.history * {
+    padding: 1rem;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+.history h2 {
+    grid-column: 1/-1;
+    justify-self: center;
+    align-self: center;
+}
+
+.history img {
+    width: 15rem;
+}
+
+.adventure {
+    min-width: 700px;
+    max-width: 1100px;
+    width: 100%;
+
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pics {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+figure {
+    border: thin silver solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+
+figure img {
+    max-width: 220px;
+    max-height: 150px;
+}
+
+figcaption {
+    background-color: #222222;
+    color: white;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-flow: row-reverse;
+}
+
+footer * {
+    width: fit-content;
+    align-self: center;
+    padding: 0.5rem;
+    padding-bottom: 0;
+}
