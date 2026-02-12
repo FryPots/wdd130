@@ -1,0 +1,87 @@
+:root {
+    --primary-color: #303030;
+    --secondary-color: #f4a261;
+    --accent1-color: #515151;
+    --accent2-color: #e9c46a;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+    color: var(--accent1-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.information {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.information address {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.form {
+    margin-top: 1rem;
+    min-width: 700px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#message {
+    width: 100%;
+    height: 100px;
+
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    height: 2rem;
+}
+
+.team {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+h2 {
+    color: var(--accent2-color);
+}
+
+.members {
+    width: 100%;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.members img {
+    width: 100%;
+}
+
+.members figcaption {
+    color: var(--secondary-color);
+    text-align: center;
+}
