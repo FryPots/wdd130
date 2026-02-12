@@ -27,6 +27,12 @@ a {
     column-gap: 1rem;
 }
 
+iframe {
+    width: 600px;
+    height: 450px;
+    border: 0;
+}
+
 .form form {
     display: flex;
     flex-direction: column;
