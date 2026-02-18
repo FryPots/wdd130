@@ -1,0 +1,117 @@
+:root {
+    --primary-color: #303030;
+    --secondary-color: #f4a261;
+    --accent1-color: #515151;
+    --accent2-color: #e9c46a;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+
+    font-family: var(--body-font);
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+
+    margin: 0%;
+}
+
+main {
+
+    margin: 0%;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero img {
+    position: relative;
+    width: 100%;
+}
+
+.hero h1,
+.hero h2 {
+    color: var(--accent2-color);
+    background-color: var(--primary-color);
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+
+.hero h1 {
+    top: 5px;
+}
+
+.hero h2 {
+    bottom: 5px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    align-items: center;
+}
+
+.services article {
+    background: whitesmoke;
+    border: var(--accent1-color) solid 1px;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-button,
+form button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+    border: var(--accent1-color) solid 1px;
+    text-decoration: none;
+}
+
+.cta-button:hover,
+form button:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+}
+
+.experiences {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.grid-item {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
