@@ -1,0 +1,48 @@
+:root {
+    --primary-color: #303030;
+    --secondary-color: #f4a261;
+    --accent1-color: #515151;
+    --accent2-color: #e9c46a;
+    --heading-font: "Times New Roman", "Georgia", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+
+}
+
+.cta {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent1-color);
+    font-family: var(--heading-font);
+}
+
+.experiences .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.experience {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.experience img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
+}
+
+.experience-text {
+    padding: 0.5em;
+    align-self: center;
+}

@@ -96,7 +96,7 @@ form button:hover {
     color: var(--accent1-color);
 }
 
-.experiences {
+.experiences .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
